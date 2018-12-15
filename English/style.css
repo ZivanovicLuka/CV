@@ -167,3 +167,9 @@ header {
     width: 100%;
     height: 10px;
 }
+
+@media print {
+    .print-container {
+        display: none;
+    }
+}
