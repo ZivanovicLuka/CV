@@ -13,9 +13,17 @@ $main-link-hover-color: #A3801A;
 $section-bg-color: #f5f5f5;
 
 
+img {
+    display: inline !important;
+}
+
 body {
     color: $main-text-color;
     background: $main-bg-color;
+}
+
+.row {
+    margin: 0;
 }
 
 /* body {
@@ -201,11 +209,12 @@ header {
     }
 
     .main {
-        padding: 0 0 0 15px;
+        // padding: 0 0 0 15px;
     }
 
     .print-container {
         margin-top: 10px;
+        padding: 0;
         font-size: 14px;
         text-align: center;
 
@@ -218,6 +227,10 @@ header {
         }
     }
 
+    .subsection-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
     
 }
 
@@ -227,4 +240,6 @@ header {
         text-align: center;
         margin-bottom: 15px;
     }
+
+    
 }
