@@ -100,6 +100,11 @@ header {
 
 .section {
     margin: 50px 0;
+
+    .subsection-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .title-left {
@@ -208,10 +213,6 @@ header {
         text-align: center;
     }
 
-    .main {
-        // padding: 0 0 0 15px;
-    }
-
     .print-container {
         margin-top: 10px;
         padding: 0;
@@ -225,13 +226,7 @@ header {
         p {
             margin: 0;
         }
-    }
-
-    .subsection-right {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
+    }    
 }
 
 @include media-breakpoint-down(xs) {
