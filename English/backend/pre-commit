@@ -4,4 +4,4 @@ cp .git/hooks/pre-commit English/backend/pre-commit
 npm run --prefix English/ build
 node English/backend/save_pdf.js
 
-exit 1
+exit 0
