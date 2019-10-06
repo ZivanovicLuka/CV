@@ -7,4 +7,8 @@ wait $!
 node English/backend/save_pdf.js
 wait $!
 
+git add English/dist/main.bundle.js
+git add English/LukaZivanovic_CV.pdf
+git add English/backend/pre-commit
+
 exit 0
