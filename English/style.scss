@@ -208,6 +208,12 @@ header {
     }
 }
 
+@page  
+{ 
+    size: auto;
+    margin: 25mm 25mm 25mm 25mm;  
+} 
+
 @include media-breakpoint-down(sm) {
     .title-left {
         text-align: center;
