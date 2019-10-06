@@ -1,7 +1,10 @@
 #!/bin/sh
 
 cp .git/hooks/pre-commit English/backend/pre-commit
+wait $!
 npm run --prefix English/ build
+wait $!
 node English/backend/save_pdf.js
+wait $!
 
 exit 0

@@ -210,8 +210,7 @@ header {
 
 @page  
 { 
-    size: auto;
-    margin: 25mm 25mm 25mm 25mm;  
+    margin: 50px auto;
 } 
 
 @include media-breakpoint-down(sm) {
