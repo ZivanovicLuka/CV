@@ -1,4 +1,48 @@
 {
+  "experience": [{
+      "institution": "Faculty of Mathematics, University of Belgrade",
+      "link": "http://www.math.rs/",
+      "position": "Teaching assistant",
+      "time": {
+        "start": {
+          "year": 2018,
+          "month": 10
+        }
+      }
+    },
+    {
+      "institution": "Code by Comtrade",
+      "link": "https://code.edu.rs/",
+      "position": "Teacher",
+      "time": {
+        "start": {
+          "year": 2019,
+          "month": 2
+        },
+        "end": {
+          "year": 2019,
+          "month": 8
+        }
+      }
+    },
+    {
+      "institution": "LiveKeys (ex. LiveCV)",
+      "link": "http://livecv.dinusv.com/",
+      "position": "Web developer",
+      "time": {
+        "start": {
+          "year": 2018,
+          "month": 9
+        },
+        "end": {
+          "year": 2019,
+          "month": 4
+        }
+      }
+    }
+  ],
+
+
   "education": [{
       "degree": "Master studies",
       "institution": "Faculty of Mathematics, University of Belgrade",
