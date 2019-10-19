@@ -35,7 +35,7 @@
       "title": "Sprinklesoft",
       "link": "https://www.sprinklesoft.net/",
       "description": "Complete website made for a small team (I am part of it). The site contains projects that we worked on and information about us. Website is fully responsive with custom made animations and contains our projects that are loaded from MySQL database.",
-      "technologies": "Frontend: HTML5/CSS3, jQuery, Bootstrap<br>Backend: PHP, MySQL",
+      "technologies": "Frontend: HTML5/CSS3, jQuery, Bootstrap\nBackend: PHP, MySQL",
       "time": {
         "year": 2017
       }
@@ -44,7 +44,7 @@
       "title": "DIG",
       "link": "https://www.dig.rs",
       "description": "Complete CMS, web design and testing for a clothing store named DIG. The website contains a cart system, dynamic content that the store’s staff can create, edit or delete, and a system for managing orders and sales. This is my first website.",
-      "technologies": "Frontend: HTML5/CSS3, jQuery<br>Backend: PHP, MySQL<br>Testing: CasperJS",
+      "technologies": "Frontend: HTML5/CSS3, jQuery\nBackend: PHP, MySQL\nTesting: CasperJS",
       "time": {
         "start": {
           "year": 2014
@@ -58,7 +58,7 @@
       "title": "Collynx",
       "link": "https://github.com/kredenac/RS10-collynx",
       "description": "Team project (4 members) for a faculty course. People can collaborate and explain their ideas easily by drawing on a shared board. Users can elaborate on an existing picture, pdf, presentation, therefore it is also useful offline for presentations and teaching since it allows the user to draw over other running programs. Application was developed using pair programming technique mostly. My focus was on custom shapes, GUI, brush settings, collecting data from backend and storing it on client device.",
-      "technologies": "Frontend: Qt, C++<br>Backend: Python",
+      "technologies": "Frontend: Qt, C++\nBackend: Python",
       "time": {
         "year": 2017
       }
@@ -82,7 +82,7 @@
       "description": "Trajectory generation using machine learning",
       "time": {
         "year": 2018,
-        "month": 6
+        "month": 5
       }
     },
     {
@@ -110,21 +110,28 @@
 
 
   "skills": [{
-    "Programming Languages": [
-      "JavaScript", "C/C++", "C#", "Python", "Java", "SQL", "PHP", "HTML/CSS"
-    ],
-    "Libraries and Frameworks": [
-      "ReactJS", "Bootstrap", "Xamarin", "Qt", "Keras", "OpenGL"
-    ],
-    "OS and Tools": [
-      "macOS", "Linux", "Windows", "Git", "Photoshop"
-    ]
-  }],
+      "Programming Languages": [
+        "JavaScript", "C/C++", "C#", "Python", "Java", "SQL", "PHP", "HTML/CSS"
+      ]
+    },
+    {
+      "Libraries and Frameworks": [
+        "ReactJS", "Bootstrap", "Xamarin", "Qt", "Keras", "OpenGL"
+      ]
+    },
+    {
+      "OS and Tools": [
+        "macOS", "Linux", "Windows", "Git", "Photoshop"
+      ]
+    }
+  ],
 
 
   "additional": [{
-    "Languages": ["Serbian", "English"]
-  }, {
-    "Hobbies": ["Powerlifting", "Skateboarding", "Mountain Biking, Gaming"]
-  }]
+      "Languages": ["Serbian", "English"]
+    },
+    {
+      "Hobbies": ["Powerlifting", "Skateboarding", "Mountain Biking", "Gaming"]
+    }
+  ]
 }

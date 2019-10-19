@@ -142,15 +142,14 @@ header {
     >h3 {
         text-align: center;
         width: 100%;
-        /* text-decoration: underline; */
         margin: 8px 0 12px 0;
     }
 
     .info {
         color: $main-text-color-secondary;
         text-align: left;
-        text-indent: -10px;
-        padding-left: 10px;
+        white-space: pre;
+        line-height: 28px;
     }
 }
 

@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Luka Živanović</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="all" href="style.css" /> -->
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
@@ -20,7 +15,8 @@
         <header>
             <div class="row">
                 <div class="col-md-3 col-sm-12 d-none d-md-block">
-                    <img src="images/Luka.jpg" alt="Profile Picture" class="img-thumbnail profile-picture" style="display: none">
+                    <img src="images/Luka.jpg" alt="Profile Picture" class="img-thumbnail profile-picture"
+                        style="display: none">
                 </div>
                 <div class="col-md-7 col-sm-9 col-xs-12">
                     <h1 class="main-title">
@@ -63,7 +59,6 @@
                         <p>View in<br>PDF</p>
                     </a>
                 </div>
-
             </div>
         </header>
 
@@ -76,169 +71,81 @@
             </div>
         </div> -->
 
-        <!-- Education -->
-        <div class="row section">
-            <div class="col-md-3 col-sm-12">
-                <h2 class="title-left">Education</h2>
-            </div>
-            <div class="col-md-9 col-sm-12">
-                <div class="row section-item">
-                    <div class="col-sm-10 col-xs-9">
-                        <h2>Master studies</h2>
-                        <h4>Faculty of Mathematics, University of Belgrade</h4>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        2017 - today
-                    </div>
+        <script id="section-template" type="x-tmpl-mustache">
+            <div class="row section">
+                <div class="col-md-3 col-sm-12">
+                    <h2 class="title-left">{{ title }}</h2>
                 </div>
-                <div class="row section-item">
-                        <div class="col-sm-10 col-xs-9">
-                        <h2>Bachelor of science in informatics</h2>
-                        <h4>Faculty of Mathematics, University of Belgrade</h4>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        2014 - 2017
-                    </div>
+                <div class="col-md-9 col-sm-12">
+                    <div id={{ div }}></div>
                 </div>
             </div>
-        </div>
+        </script>
 
-        <!-- Projets -->
-        <div class="row section">
-            <div class="col-md-3 col-sm-12">
-                <h2 class="title-left">Projets</h2>
-            </div>
-            <div class="col-md-9 col-sm-12">
-                <div class="row section-item">
-                    <h3>Bank Keyboard</h3>
+        <script id="section-item-template" type="x-tmpl-mustache">
+            <div class="row section-item">
+                    <h3>{{ h3_title }}</h3>
                     <div class="col-sm-10 col-xs-9">
-                        <p>Team project (2 members) for an international bank. Keyboard that allows user to send money
-                            by clicking one button and following a short form. Different designs for Android and iOS,
-                            all packed in Xamarin application with banks mBanking application.</p>
-                        <p class="info">Implemented in Xamarin</p>
+                        <h2>{{ h2_title }}</h2>
+                        <a href={{ a_link }}>{{ a_text }}</a>
+                        <h4>{{ h4_text }}</h4>
+                        <p>{{ text }}</p>
+                        <p class='info'>{{ info }}</p>
                     </div>
                     <div class="col-sm-2 col-xs-3 date">
-                        2018
+                        {{ time }}
                     </div>
                 </div>
+        </script>
 
-                <div class="row section-item">
-                    <h3>Sprinklesoft</h3>
-                    <div class="col-sm-10 col-xs-9">
-                        <a href="https://www.sprinklesoft.net/">https://www.sprinklesoft.net/</a>
-                        <p>Complete website made for a small team (I am part of it). The site contains projects that we
-                            worked on and information about us. Website is fully responsive with custom made animations
-                            and contains our projects that are loaded from MySQL database.</p>
-                        <p class="info">Frontend: HTML5/CSS3, jQuery, Bootstrap</p>
-                        <p class="info">Backend: PHP, MySQL</p>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        2017
+        <!-- SECTIONS -->
+        <div id="education"></div>
+        <div id="projects"></div>
+        <div id="awards"></div>
+
+
+        <script id="small-section-template" type="x-tmpl-mustache">
+            <div class="row section no-break">
+                <div class="col-md-3 col-sm-12">
+                    <h2 class="title-left">{{ title }}</h2>
+                </div>
+                <div class="col-md-9 col-sm-12 subsection-right">
+                    <div id={{ div }} class="row">
                     </div>
                 </div>
+            </div>                
+        </script>
 
-                <div class="row section-item">
-                    <h3>DIG</h3>
-                    <div class="col-sm-10 col-xs-9">
-                        <a href="https://www.dig.rs">https://www.dig.rs</a>
-                        <p>Complete CMS, web design and testing for a clothing store named DIG. The website contains a
-                            cart system, dynamic content that the store’s staff can create, edit or delete, and a
-                            system for managing orders and sales.</p>
-                        <p class="info">Frontend: HTML5/CSS3, jQuery</p>
-                        <p class="info">Backend: PHP, MySQL</p>
-                        <p class="info">Testing: CasperJS</p>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        2016 - 2017
-                    </div>
-                </div>
-
-                <div class="row section-item">
-                    <h3>Collynx</h3>
-                    <div class="col-sm-10 col-xs-9">
-                        <a href="https://github.com/kredenac/RS10-collynx">https://github.com/kredenac/RS10-collynx</a>
-                        <p>Team project (4 members) for a faculty course. People can collaborate and explain their
-                            ideas easily by drawing on a shared board. Users can elaborate on an existing picture, pdf,
-                            presentation, therefore it is also useful offline for presentations and teaching since it
-                            allows the user to draw over other running programs. Application was developed using pair
-                            programming technique mostly. My focus was on custom shapes, GUI, brush settings,
-                            collecting data from backend and storing it on client device.</p>
-                        <p class="info">Frontend: Qt, C++</p>
-                        <p class="info">Backend: Python</p>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        2017
-                    </div>
-                </div>
-
-                <div class="row section-item">
-                    <h3>Glide Through Sky</h3>
-                    <div class="col-sm-10 col-xs-9">
-                        <a href="https://github.com/kredenac/RS10-collynx">https://github.com/kredenac/RS10-collynx</a>
-                        <p>Glide Through Sky is a game inspired by Flappy Bird. The player constantly goes forward
-                            while being able to jump and dash. The player spends mana for dashing which he recovers by
-                            beating enemies and collecting crystals. The goal is to pass as many obstacles as possible.
-                            My focus was to develop low polygon game for lower spec PCs, that keeps consistent and
-                            polished aesthetics by randomly generating matching colors and animating game objects
-                            smoothly.</p>
-                        <p class="info">Implemented in C, OpenGL, GLUT</p>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        2017
+        <script id="small-section-card-template" type="x-tmpl-mustache">
+            <div class="col-md col-sm-6">
+                <div class="card skill-box">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ title }}</h5>
+                        <div class="skill-box-bot">
+                            CARD_ITEMS
+                            <div class="skill-box-bot-helper"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </script>
 
-        <!-- Awards -->
-        <div class="row section">
-            <div class="col-md-3 col-sm-12">
-                <h2 class="title-left">Awards</h2>
+        <script id="small-section-item-template" type="x-tmpl-mustache">
+            <div class="skill-item">
+                {{ item }}
             </div>
-            <div class="col-md-9 col-sm-12">
-                <div class="row section-item">
-                    <h3>MatHack</h3>
-                    <div class="col-sm-10 col-xs-9">
-                        <p>Faculty of Mathematics, Belgrade, 2nd place</p>
-                        <p class="info">Trajectory generation using machine learning</p>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        May 2018
-                    </div>
-                </div>
+        </script>
 
-                <div class="row section-item">
-                    <h3>Deep Web Hackathon</h3>
-                    <div class="col-sm-10 col-xs-9">
-                        <p>Brasidas, Belgrade, 2nd place</p>
-                        <p class="info">Website analysis (Regular and deep/dark web)</p>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        April 2017
-                    </div>
-                </div>
-
-                <div class="row section-item">
-                    <h3>Beyond Hackathon</h3>
-                    <div class="col-sm-10 col-xs-9">
-                        <p>Eurobank, Athens, 2nd place (of 38 teams)</p>
-                        <p class="info">Eurobank voice assistant</p>
-                    </div>
-                    <div class="col-sm-2 col-xs-3 date">
-                        March 2017
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="skills"></div>
 
         <!-- Skills -->
-        <div class="row section no-break">
+        <!-- <div class="row section no-break">
             <div class="col-md-3 col-sm-12">
                 <h2 class="title-left">Skills</h2>
             </div>
             <div class="col-md-9 col-sm-12 subsection-right">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md col-sm-6">
                         <div class="card skill-box">
                             <div class="card-body">
                                 <h5 class="card-title">Programming Languages</h5>
@@ -272,7 +179,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md col-sm-6">
                         <div class="card skill-box">
                             <div class="card-body">
                                 <h5 class="card-title">IDEs and Libraries</h5>
@@ -308,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
+                    <div class="col-md col-sm-6">
                         <div class="card skill-box">
                             <div class="card-body">
                                 <h5 class="card-title">OS and Tools</h5>
@@ -325,10 +232,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
+        <div id="additional"></div>
 
-        <div class="row section no-break">
+        <!-- <div class="row section no-break">
             <div class="col-md-3 col-sm-12">
                 <h2 class="title-left">Additional</h2>
             </div>
@@ -373,20 +281,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+    </div>
 
-        <script src="./dist/main.bundle.js"></script>
-        </script>
-
-        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-        </script> -->
+    <script src="./dist/main.bundle.js"></script>
+    </script>
 </body>
 
 </html>
