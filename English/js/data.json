@@ -67,15 +67,35 @@
   ],
 
 
-  "projects": [{
-      "title": "Bank Keyboard",
-      "description": "Team project (2 members) for an international bank. Keyboard that allows user to send money by clicking one button and following a short form.Different designs for Android and iOS, all packed in Xamarin application with banks mBanking application.",
-      "technologies": "Implemented in Xamarin",
+  "projects": [
+    {
+      "title": "Fourier transformation visualization",
+      "link": "https://github.com/ZivanovicLuka/FourierTransformationVisualization",
+      "description": "Web application for a faculty course that shows how Fourier transformation (aproximation) is generetd visually.",
+      "technologies": "Implemented in javascript (ES6) and pixi.js",
       "time": {
         "year": 2018
       }
     },
     {
+      "title": "Game of Life FP",
+      "link": "https://github.com/ZivanovicLuka/GameOfLife-FP",
+      "description": "Team project (2 members) for a faculty course. Game of Life built in functional style using meta programming techniques.",
+      "technologies": "Implemented in C++\nLibraries: SFML, range-v3",
+      "time": {
+        "year": 2019
+      }
+    },
+    {
+      "title": "Bank Keyboard",
+      "description": "Team project (2 members) for an international bank. Keyboard that allows user to send money by clicking one button and following a short form. Different designs for Android and iOS, all packed in Xamarin application with banks mBanking application.",
+      "technologies": "Implemented in Xamarin",
+      "time": {
+        "year": 2019
+      }
+    },
+    {
+      "hidden": true,
       "title": "Sprinklesoft",
       "link": "https://www.sprinklesoft.net/",
       "description": "Complete website made for a small team (I am part of it). The site contains projects that we worked on and information about us. Website is fully responsive with custom made animations and contains our projects that are loaded from MySQL database.",

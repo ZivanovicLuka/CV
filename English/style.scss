@@ -12,6 +12,11 @@ $main-link-hover-color: #A3801A;
 
 $section-bg-color: #f5f5f5;
 
+::selection {
+    background: $main-link-color;
+    color: #fff;
+}
+
 
 img {
     display: inline !important;
@@ -124,7 +129,9 @@ header {
         text-align: justify;
     }
 
-
+    a {
+        word-break: break-word;
+    }
 
     h2 {
         font-size: 26px;
@@ -215,6 +222,7 @@ header {
 @include media-breakpoint-down(sm) {
     .title-left {
         text-align: center;
+        margin-bottom: 25px;
     }
 
     .print-container {

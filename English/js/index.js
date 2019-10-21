@@ -145,6 +145,8 @@ let experienceRenderedTemplate = Mustache.render(sectionTemplate, {
 let experience = data.experience;
 let experienceRenderedItem = '';
 for (const item of experience) {
+  if(item.hidden === true)
+    continue;
   experienceRenderedItem +=
     Mustache.render(sectionItemTemplate, {
       h2_title: item.institution,
@@ -170,6 +172,8 @@ let educationRenderedTemplate = Mustache.render(sectionTemplate, {
 let education = data.education;
 let educationRenderedItem = '';
 for (const item of education) {
+  if(item.hidden === true)
+    continue;
   educationRenderedItem +=
     Mustache.render(sectionItemTemplate, {
       h2_title: item.degree,
@@ -193,6 +197,8 @@ let projectsRenderedTemplate = Mustache.render(sectionTemplate, {
 let projects = data.projects;
 let projectsRenderedItem = '';
 for (const item of projects) {
+  if(item.hidden === true)
+    continue;
   projectsRenderedItem +=
     Mustache.render(sectionItemTemplate, {
       h3_title: item.title,
@@ -219,6 +225,8 @@ let awardsRenderedTemplate = Mustache.render(sectionTemplate, {
 let awards = data.awards;
 let awardsRenderedItem = '';
 for (const item of awards) {
+  if(item.hidden === true)
+    continue;
   awardsRenderedItem +=
     Mustache.render(sectionItemTemplate, {
       h3_title: item.title,
@@ -244,7 +252,6 @@ let skillsRenderedTemplate = Mustache.render(smallSectionTemplate, {
 
 let skills = data.skills;
 let skillsRenderedCard = '';
-console.log(skills)
 for (const card of skills) {
   let key = Object.keys(card)[0];
 
@@ -283,8 +290,6 @@ let additionalRenderedCard = '';
 
 for (const card of additional) {
   let key = Object.keys(card)[0];
-
-  console.log(key);
 
   let currentCard =
     Mustache.render(smallSectionCardTemplate, {
