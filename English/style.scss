@@ -148,7 +148,7 @@ header {
     .info {
         color: $main-text-color-secondary;
         text-align: left;
-        white-space: pre;
+        white-space: pre-wrap;
         line-height: 28px;
     }
 }

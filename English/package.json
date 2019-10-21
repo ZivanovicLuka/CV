@@ -10,24 +10,24 @@
   "author": "Luka Zivanovic",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
     "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
-    "webpack": "^4.29.6"
+    "webpack": "^4.41.2"
   },
   "dependencies": {
-    "acorn": "^6.1.1",
+    "acorn": "^6.3.0",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "mustache": "^3.1.0",
     "popper": "^1.0.1",
-    "popper.js": "^1.15.0",
+    "popper.js": "^1.16.0",
     "puppeteer": "^1.20.0",
-    "webpack-cli": "^3.3.0"
+    "webpack-cli": "^3.3.9"
   }
 }
