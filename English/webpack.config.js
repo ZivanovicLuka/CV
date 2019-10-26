@@ -9,8 +9,7 @@ module.exports = {
     filename: "[name].bundle.js"
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -24,6 +23,13 @@ module.exports = {
           "css-loader", // translates CSS into CommonJS
           "sass-loader" // compiles Sass to CSS, using Node Sass by default
         ]
+      },
+      {
+        test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.xml$/,
+        loader: "file-loader",
+        options: {
+          outputPath: './loader',
+        },
       }
     ]
   }

@@ -3,6 +3,8 @@ import $ from 'jquery';
 import Mustache from 'mustache'
 import 'bootstrap';
 import '../style.scss';
+import '../favicons/favicons';
+
 
 let monthToText = month => {
   switch (month) {

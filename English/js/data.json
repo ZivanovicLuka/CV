@@ -71,7 +71,7 @@
     {
       "title": "Fourier transformation visualization",
       "link": "https://github.com/ZivanovicLuka/FourierTransformationVisualization",
-      "description": "Web application for a faculty course that shows how Fourier transformation (aproximation) is generetd visually.",
+      "description": "Web application that shows how Fourier transformation (approximation) is genereted visually.",
       "technologies": "Implemented in javascript (ES6) and pixi.js",
       "time": {
         "year": 2018
@@ -80,7 +80,7 @@
     {
       "title": "Game of Life FP",
       "link": "https://github.com/ZivanovicLuka/GameOfLife-FP",
-      "description": "Team project (2 members) for a faculty course. Game of Life built in functional style using meta programming techniques.",
+      "description": "Game of Life built by colleague and me in functional style using meta programming techniques.",
       "technologies": "Implemented in C++\nLibraries: SFML, range-v3",
       "time": {
         "year": 2019
@@ -121,7 +121,7 @@
     {
       "title": "Collynx",
       "link": "https://github.com/kredenac/RS10-collynx",
-      "description": "Team project (4 members) for a faculty course. People can collaborate and explain their ideas easily by drawing on a shared board. Users can elaborate on an existing picture, pdf, presentation, therefore it is also useful offline for presentations and teaching since it allows the user to draw over other running programs. Application was developed using pair programming technique mostly. My focus was on custom shapes, GUI, brush settings, collecting data from backend and storing it on client device.",
+      "description": "Team project (4 members). People can collaborate and explain their ideas easily by drawing on a shared board. Users can elaborate on an existing picture, pdf, presentation, therefore it is also useful offline for presentations and teaching since it allows the user to draw over other running programs. Application was developed using pair programming technique mostly. My focus was on custom shapes, GUI, brush settings, collecting data from backend and storing it on client device.",
       "technologies": "Frontend: Qt, C++\nBackend: Python",
       "time": {
         "year": 2017
