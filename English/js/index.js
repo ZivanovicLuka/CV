@@ -315,3 +315,11 @@ $('#additional').html(additionalRenderedTemplate);
 $('#additional-data').html(additionalRenderedCard);
 
 // ============================================================ 
+
+// =============== Removes empty headers ======================= 
+console.log("ASD")
+$('h1, h2, h3, h4, h5, h6, p').each(function(){
+  if(!$(this).text() || !$(this).text().trim())
+    $(this).remove();
+ })
+// ============================================================ 

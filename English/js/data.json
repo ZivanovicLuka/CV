@@ -68,13 +68,23 @@
 
 
   "projects": [
+    
+    {
+      "title": "doodLbot",
+      "link": "https://github.com/ivan-ristovic/doodLbot",
+      "description": "A multiplayer game with client - server architecture written from scratch.",
+      "technologies": "Frontend: js and pixi.js\nBackend: C# and AspNetCore",
+      "time": {
+        "year": 2019
+      }
+    },
     {
       "title": "Fourier transformation visualization",
       "link": "https://github.com/ZivanovicLuka/FourierTransformationVisualization",
       "description": "Web application that shows how Fourier transformation (approximation) is genereted visually.",
       "technologies": "Implemented in javascript (ES6) and pixi.js",
       "time": {
-        "year": 2018
+        "year": 2019
       }
     },
     {
@@ -175,12 +185,12 @@
 
   "skills": [{
       "Programming Languages": [
-        "JavaScript", "C/C++", "C#", "Python", "Java", "SQL", "PHP", "HTML/CSS"
+        "C/C++", "C#", "Python", "Java", "JavaScript", "SQL", "PHP", "HTML/CSS"
       ]
     },
     {
       "Libraries and Frameworks": [
-        "ReactJS", "Bootstrap", "Xamarin", "Qt", "Keras", "OpenGL"
+        "OpenGL", "Xamarin", "Qt", "ReactJS", "Bootstrap",  "Keras"
       ]
     },
     {
@@ -195,7 +205,7 @@
       "Languages": ["Serbian", "English"]
     },
     {
-      "Hobbies": ["Powerlifting", "Skateboarding", "Mountain Biking", "Gaming"]
+      "Hobbies": ["Powerlifting", "(e)Skateboarding", "Mountain Biking", "Gaming"]
     }
   ]
 }
