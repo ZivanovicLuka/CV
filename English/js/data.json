@@ -7,6 +7,10 @@
         "start": {
           "year": 2018,
           "month": 10
+        },
+        "end": {
+          "year": 2019,
+          "month": 11
         }
       }
     },
@@ -190,7 +194,7 @@
     },
     {
       "Libraries and Frameworks": [
-        "OpenGL", "Xamarin", "Qt", "ReactJS", "Bootstrap",  "Keras"
+        "Unity", "OpenGL", "Xamarin", "Qt", "ReactJS", "Bootstrap",  "Keras"
       ]
     },
     {
