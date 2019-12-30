@@ -143,7 +143,7 @@
     },
     {
       "title": "Glide Through Sky",
-      "link": "https://github.com/kredenac/RS10-collynx",
+      "link": "https://youtu.be/W4PdJ7c3XLA",
       "description": "Glide Through Sky is a game inspired by Flappy Bird. The player constantly goes forward while being able to jump and dash. The player spends mana for dashing which he recovers by beating enemies and collecting crystals. The goal is to pass as many obstacles as possible. My focus was to develop a low polygon game for lower spec PCs, that keeps consistent and polished aesthetics by randomly generating matching colors and animating game objects smoothly.",
       "technologies": "Implemented in C, OpenGL, GLUT",
       "time": {
