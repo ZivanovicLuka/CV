@@ -22,7 +22,7 @@
     "webpack": "^4.41.2"
   },
   "dependencies": {
-    "acorn": "^6.3.0",
+    "acorn": "^6.4.1",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "mustache": "^3.1.0",
